@@ -1,0 +1,242 @@
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: grey;
+    color: black;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Sans-Serif;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('https://Ak couture.com') center/cover no-repeat;
+    text-align: center;
+    padding: 120px 20px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: grey;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.buy-btn {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* ABOUT */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* CONTACT */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+video {
+  padding: 40px;
+}
+
+/* ---------------------------------------
+   BREAKPOINT: Screens 600px and below
+   --------------------------------------- */
+@media (max-width: 600px) {
+
+    /* Make the menu vertical on small screens */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Resize hero text for small screens */
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    /* Make product cards stack vertically */
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make the header stack neatly */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* ---------------------------------------
+   BREAKPOINT: Screens 768px and below
+   --------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Adjust navigation spacing */
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    /* Slightly smaller hero text */
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    /* Make product cards a bit larger for tablets */
+    .product-card {
+        width: 260px;
+    }
+
+    /* Wider input forms on tablets */
+    .contact input,
+    .contact textarea {
+        width: 90%;
+    }
+}
+/* ---------------------------------------
+   BREAKPOINT: Screens 1024px and below
+   --------------------------------------- */
+@media (max-width: 1024px) {
+
+    /* Reduce header padding slightly */
+    header {
+        padding: 15px 20px;
+    }
+
+    /* Adjust hero section spacing */
+    .hero {
+        padding: 100px 20px;
+    }
+
+    /* Reduce product grid spacing */
+    .product-grid {
+        gap: 15px;
+    }
+
+    /* Slightly scale product card size */
+    .product-card {
+        width: 240px;
+    }
+}
+
+
+
+
+
+
+
+
+
